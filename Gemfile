@@ -25,7 +25,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -35,10 +35,19 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'bootstrap' # CSSフレームワーク
+gem 'html2slim' # htmlをslimに変更
+gem 'slim-rails' # erbでなくslimを使用
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'annotate' # ルーティング・DBスキーマの可視化
+  gem 'pry-rails' # rails consoleをpryにする
+  gem 'pry-byebug' # binding.pry
+  gem 'pry-doc' # pryで`show-source Array#push`のようにすると、該当コマンドのC言語で書かれたソースコードを表示できるようになる。
+  gem 'rspec-rails' # テストフレームワーク
+  gem 'factory_bot_rails' # テスト用データ作成
 end
 
 group :development do
