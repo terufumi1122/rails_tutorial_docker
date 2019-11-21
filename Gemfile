@@ -48,6 +48,7 @@ group :development, :test do
   gem 'pry-doc' # pryで`show-source Array#push`のようにすると、該当コマンドのC言語で書かれたソースコードを表示できるようになる。
   gem 'rspec-rails' # テストフレームワーク
   gem 'factory_bot_rails' # テスト用データ作成
+  gem 'rails-controller-testing'
 end
 
 group :development do
@@ -64,7 +65,8 @@ group :test do
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
+  # gem 'chromedriver-helper'
+  gem 'webdrivers'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
