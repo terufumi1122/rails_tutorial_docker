@@ -55,6 +55,8 @@ group :development, :test do
   gem 'rspec-rails' # テストフレームワーク
   gem 'rubocop', require: false
   gem 'rubocop-rails', require: false
+  gem 'spork'
+  gem 'database_cleaner'
 end
 
 group :development do
