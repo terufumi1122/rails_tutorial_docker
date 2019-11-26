@@ -315,6 +315,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   database_cleaner
   factory_bot_rails
+  guard
   guard-rspec
   guard-rubocop
   html2slim

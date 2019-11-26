@@ -34,6 +34,7 @@ guard :rspec, cmd: 'bundle exec rspec', all_on_start: true do
   require 'guard/rspec/dsl'
   dsl = Guard::RSpec::Dsl.new(self)
 
+  Compat::UI.debug(m, reset: true)
   # Feel free to open issues for suggestions and improvements
 
   # RSpec files
