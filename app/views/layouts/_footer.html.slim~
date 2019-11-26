@@ -1,4 +1,4 @@
-footer.footer.container
+footer.footer
   small
     | The
     = link_to ' Ruby on Rails Tutorial ', 'https://railstutorial.jp'

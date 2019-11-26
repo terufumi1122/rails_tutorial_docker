@@ -99,7 +99,6 @@ footer {
 // miscellaneous
 
 .debug_dump {
-  background: $gray-medium-light;
   clear: both;
   float: left;
   width: 100%;
