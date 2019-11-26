@@ -23,9 +23,9 @@ Style/AsciiComments:
   Enabled: false
 
 # クラスのコメント必須を無視
-Style/Documentation:
+Cop/Documentation:
   Enabled: false
 
 # モジュール名::クラス名の定義を許可
-Style/ClassAndModuleChildren:
+Cop/ClassAndModuleChildren:
   Enabled: false

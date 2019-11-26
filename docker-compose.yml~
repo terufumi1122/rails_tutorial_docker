@@ -6,7 +6,7 @@ services:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: root
     volumes:
-      - db-data:/var/lib/mysql
+      - datavol:/var/lib/mysql
     ports:
       - "3307:3306"
 
@@ -24,4 +24,4 @@ services:
       - db
 
 volumes:
-  db-data:
+  datavol:
